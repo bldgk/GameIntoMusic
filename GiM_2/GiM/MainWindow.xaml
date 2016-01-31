@@ -1,0 +1,44 @@
+﻿<Window x:Class="GiM.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Game into Music" Height="768" Width="1366" WindowState="Maximized" HorizontalAlignment="Left">
+    
+    <Grid Background="#FF636363">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="37*"/>
+            <ColumnDefinition Width="1322*"/>
+        </Grid.ColumnDefinitions>
+        <Menu Height="24" VerticalAlignment="Top" Margin="0,0,179,0" Background="Black" Foreground="Black" Grid.ColumnSpan="2">
+            <MenuItem x:Name="mi_Site" Icon="" Width="32" Margin="0" Height="24" />
+            <MenuItem x:Name="mi_File" Header="File" Height="23.438" Width="35.5" Foreground="White">
+                <MenuItem x:Name ="New_composition" Header="New Composition..." Click="New_composition_Click"/>
+            </MenuItem>
+            <MenuItem x:Name="mi_Composition" Header="Composition" Height="24" Width="82" Foreground="White"/>
+            <MenuItem x:Name="mi_Track" Header="Track" Height="24" Width="46" Foreground="White"/>
+            <MenuItem x:Name="mi_Bar" Header="Bar" Height="24" Width="36" Foreground="White"/>
+            <MenuItem x:Name="mi_Note" Header="Note" Height="24" Width="45" Foreground="White"/>
+            <MenuItem x:Name="mi_Tools" Header="Tools" Height="24" Width="43" Foreground="White"/>
+            <MenuItem x:Name="mi_Sound" Header="Sound" Height="24" Width="50" Foreground="White"/>
+            <MenuItem x:Name="mi_View" Header="View" Height="24" Width="41" Foreground="White"/>
+            <MenuItem x:Name="mi_Service" Header="Service" Height="24" Width="54" Foreground="White"/>
+            <MenuItem x:Name="mi_About" Header="_About" Height="24" Width="52" Foreground="White">
+                <MenuItem x:Name="mi_Registration" Header="Registration" Foreground="White" Background="Black" Click="mi_Registration_Click"></MenuItem>
+            </MenuItem>
+
+        </Menu>
+        <Menu Grid.Column="1" Height="24" VerticalAlignment="Top" HorizontalAlignment="Right" Width="174" Background="Black">
+            <MenuItem x:Name="mi_Account" Header="_(Acc_name)" Width="174" Margin="0" Height="24" Background="Black" Foreground="White" >
+                <MenuItem x:Name="mi_ViewProfile" Header="_Profile" Width="134" Margin="0,0,0,0" Height="24" HorizontalAlignment="Center" Click="mi_ViewProfile_Click"/>
+                <MenuItem x:Name="mi_smth" Header="_smth" Width="134" Margin="0,0,0,0" Height="24" HorizontalAlignment="Center" />
+                <MenuItem x:Name="mi_smth1" Header="_smth1" Width="134" Margin="0,0,0,0" Height="24" HorizontalAlignment="Center" />
+                <MenuItem x:Name="mi_smth2" Header="_smth2" Width="134" Margin="0,0,0,0" Height="24" HorizontalAlignment="Center" />
+                <MenuItem x:Name="mi_smth3" Header="s_mth3" Width="134" Margin="0,0,0,0" Height="24" HorizontalAlignment="Center" />
+                <MenuItem x:Name="mi_SignOut" Header="_Sign out" Width="134" Margin="0,0,0,0" Height="24" HorizontalAlignment="Center" />
+            </MenuItem>
+        </Menu>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="479.5,207,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1" />
+        <StackPanel HorizontalAlignment="Left" Height="29" Margin="0,24,0,0" VerticalAlignment="Top" Width="1348" Grid.ColumnSpan="2" Orientation="Horizontal">
+            <TextBlock Text="1"></TextBlock>
+        </StackPanel>
+    </Grid>
+</Window>

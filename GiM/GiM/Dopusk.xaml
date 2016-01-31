@@ -1,0 +1,113 @@
+﻿<Window x:Class="GiM.Dopusk"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Dopusk" Height="400" Width="500" Background="#FF8B00FF">
+    <Window.Resources>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Background" Value="#FF8B00FF"/>
+            <Setter Property="BorderBrush" Value="Black" />
+            <Setter Property="FontSize" Value="22" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#FF00FFF3"/>
+                
+                </Trigger>
+           
+            <!--<EventTrigger RoutedEvent="MouseEnter">
+                <EventTrigger.Actions>
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Duration="0:0:0.300"  Storyboard.TargetProperty="Background" To="18" />
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger.Actions>
+            </EventTrigger>
+            <EventTrigger RoutedEvent="MouseLeave">
+                <EventTrigger.Actions>
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Duration="0:0:0.800" Storyboard.TargetProperty="FontSize" />
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger.Actions>
+            </EventTrigger>-->
+        </Style.Triggers>
+        </Style>
+        <Style TargetType="{x:Type TextBlock}">
+            <Setter Property="Background" Value="{x:Null}" />
+            <Setter Property="Foreground" Value="Red" />
+            <Setter Property="FontSize" Value="36" />
+            <Setter Property="FontFamily" Value="Microsoft JhengHei Light" />
+            <Setter Property="TextAlignment" Value="Right" />
+            <Style.Triggers>
+                <EventTrigger RoutedEvent="MouseEnter">
+                    <EventTrigger.Actions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation Duration="0:0:0.300"  Storyboard.TargetProperty="FontSize" To="18" />
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger.Actions>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="MouseLeave">
+                    <EventTrigger.Actions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation Duration="0:0:0.800" Storyboard.TargetProperty="FontSize" />
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger.Actions>
+                </EventTrigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="37*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock x:Name="Display"  Grid.Column="2" Grid.ColumnSpan="6" Grid.Row="1" />
+        <Button x:Name="One" Content="1" Click="One_Click" Grid.Column="2" Grid.Row="3"/>
+        <Button x:Name="Two" Content="2"  Click="Two_Click" Grid.Column="3" Grid.Row="3"/>
+        <Button x:Name="Three" Content="3"  Click="Three_Click" Grid.Column="4" Grid.Row="3"/>
+        <Button x:Name="Four" Content="4" Click="Four_Click" Grid.Column="2" Grid.Row="4"/>
+        <Button x:Name="Five" Content="5"  Click="Five_Click" Grid.Column="3" Grid.Row="4"/>
+        <Button x:Name="Six" Content="6" Click="Six_Click" Grid.Column="4" Grid.Row="4"/>
+        <Button x:Name="Seven" Content="7"  Click="Seven_Click" Grid.Column="2" Grid.Row="5"/>
+        <Button x:Name="Eight" Content="8"  Click="Eight_Click" Grid.Column="3" Grid.Row="5"/>
+        <Button x:Name="Nine" Content="9"  Click="Nine_Click" Grid.Column="4" Grid.Row="5"/>
+        <Button x:Name="Zero" Content="0" Click="Zero_Click" Grid.Column="5" Grid.Row="5"/>
+        <Button x:Name="Add" Content="+" Click="Add_Click" Grid.Column="5" Grid.Row="3"/>
+        <Button x:Name="Subtract" Content="-" Click="Subtract_Click" Grid.Column="6" Grid.Row="3"/>
+        <Button x:Name="Multiply" Content="x"  Click="Multiply_Click" Grid.Column="5" Grid.Row="4"/>
+        <Button x:Name="Divide" Content="/"   Click="Divide_Click" Grid.Column="6" Grid.Row="4"/>
+        <Button x:Name="Equal" Content="="   Click="Equal_Click" Grid.Column="6" Grid.Row="5"/>
+        <Button x:Name="AC" Content="AC"   Click="AC_Click" Grid.Column="7" Grid.Row="3"/>
+    </Grid>
+</Window>

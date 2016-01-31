@@ -1,0 +1,93 @@
+﻿<Window x:Class="GiM.WindowInformation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WindowInformation" Height="350" Width="650" Background="#FF636363" ResizeMode="NoResize" WindowStyle="None" MouseDown="Window_MouseDown_1">
+    <Window.Resources>
+
+
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="14*"/>
+            <RowDefinition Height="13*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="14*"/>
+            <RowDefinition Height="17*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="17*"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="18*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="18*"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="18*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="17*"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="17*"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="17*"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="17*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="25*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="15*"/>
+            <ColumnDefinition Width="120*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="107*"/>
+            <ColumnDefinition Width="61*"/>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="99*"/>
+            <ColumnDefinition Width="24*"/>
+            <ColumnDefinition Width="96*"/>
+            <ColumnDefinition Width="57*"/>
+            <ColumnDefinition Width="19*"/>
+            <ColumnDefinition Width="19*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Title"  Grid.Column="2" Grid.Row="4" Grid.RowSpan="2"/>
+        <TextBlock Text="Artist" Grid.Column="2" Grid.Row="7" Grid.RowSpan="2" />
+        <TextBlock Text="Album" Grid.Column="2" Grid.Row="10" Grid.RowSpan="2"/>
+        <TextBlock Text="Subtitle" Grid.Column="2" Grid.Row="13" Grid.RowSpan="2"/>
+        <TextBlock Text="Words" Grid.Column="2" Grid.Row="16" Grid.RowSpan="2" />
+        <TextBlock Text="Music" Grid.Column="2" Grid.Row="19" Grid.RowSpan="2" />
+        <TextBlock Text="Tabs"  Grid.Column="2" Grid.Row="22" Grid.RowSpan="2" />
+        <TextBlock Text="Copyright " Grid.Column="2" Grid.Row="25" Grid.RowSpan="2" />
+        <TextBlock Text="Notice " Grid.Column="2" Grid.Row="28" Grid.RowSpan="2" />
+        <TextBox x:Name = "tb_Title"  Grid.Column="4" Grid.Row="4" Grid.ColumnSpan="2" />
+        <TextBox x:Name = "tb_Artist" Grid.Column="4" Grid.Row="7" Grid.ColumnSpan="2" />
+        <TextBox x:Name = "tb_Album"  Grid.Column="4" Grid.Row="10" Grid.ColumnSpan="2" />
+        <TextBox x:Name = "tb_Subtitle"   Grid.Column="4" Grid.Row="13" Grid.ColumnSpan="2" />
+        <TextBox x:Name = "tb_Words" Grid.Column="4" Grid.Row="16" Grid.ColumnSpan="2" />
+        <TextBox x:Name = "tb_Music" Grid.Column="4" Grid.Row="19" Grid.ColumnSpan="2" />
+        <TextBox x:Name = "tb_Tabs" Grid.Column="4" Grid.Row="22" Grid.ColumnSpan="2"  />
+        <TextBox x:Name = "tb_Copytight"  Grid.Column="4" Grid.Row="25" Grid.ColumnSpan="2"  />
+        <TextBox x:Name = "tb_Notice" Grid.Column="4" Grid.Row="28" Grid.ColumnSpan="2"/>
+        <TextBlock TextAlignment="Center" Grid.Column="2" Grid.Row="1" Text="Information" Grid.ColumnSpan="10" FontSize="18" Grid.RowSpan="2"/>
+        <Button x:Name="btn_OK" Content="Ok" Grid.Column="10" Grid.Row="31" Click="btn_OK_Click" />
+        <Button x:Name="btn_Edit" Content="Edit" Grid.Column="5" Grid.Row="31" Click="btn_Edit_Click" />
+        <TextBlock Text="Tracks"  Grid.Column="7" Grid.Row="4" Margin="0,0,0,5" Grid.RowSpan="3"/>
+        <TextBlock Text="Instruments"  Grid.Column="7" Grid.Row="16" Grid.RowSpan="2"/>
+        <ListBox x:Name="lb_Tracks"  Grid.ColumnSpan="3" Grid.Column="7" Grid.Row="7" Grid.RowSpan="7" />
+        <ListBox x:Name="lb_Instruments" Grid.ColumnSpan="3" Grid.Column="7" Grid.Row="19" Grid.RowSpan="9" />
+
+    </Grid>
+</Window>

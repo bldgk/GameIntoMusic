@@ -1,0 +1,8 @@
+﻿<Window x:Class="GiM.WindowProfile"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WindowProfile" Height="300" Width="300" WindowState="Normal" WindowStartupLocation="CenterScreen" Background="#FF818181">
+    <Grid>
+        
+    </Grid>
+</Window>

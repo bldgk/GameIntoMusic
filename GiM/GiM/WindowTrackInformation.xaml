@@ -1,0 +1,79 @@
+﻿<Window x:Class="GiM.WindowTrackInformation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WindowTrackInformation" Height="250" Width="640" ResizeMode="NoResize" WindowStyle="None" Background="#FF636363">
+    <Window.Resources>
+        <Style TargetType="{x:Type TextBox}">
+            <Setter Property="Background" Value="#FFB4B4B4" />
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="FontFamily" Value="Microsoft JhengHei Light" />
+        </Style>
+        <Style TargetType="{x:Type TextBlock}">
+            <Setter Property="Background" Value="{x:Null}" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="FontFamily" Value="Microsoft JhengHei Light" />
+            <Setter Property="TextAlignment" Value="Center" />
+        </Style>
+        <Style TargetType="{x:Type Expander}">
+            <Setter Property="Background" Value="#FF515151"/>
+            <Setter Property="IsExpanded" Value="False" />
+        </Style>
+    </Window.Resources>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="22*"/>
+            <RowDefinition Height="143*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="15*"/>
+            
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="12*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="59*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="31*"/>
+            <ColumnDefinition Width="14*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="3" Grid.Row="4" Grid.ColumnSpan="3">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="16*"/>
+                <RowDefinition Height="27*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="25*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="25*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="25*"/>
+                <RowDefinition Height="25*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="123*"/>
+                <ColumnDefinition Width="247*"/>
+                <ColumnDefinition Width="5*"/>
+            </Grid.ColumnDefinitions>
+            <TextBox Grid.Column="1" Grid.Row="1" />
+            <TextBox Grid.Column="1" Grid.Row="3" />
+            <Canvas Grid.Column="1" Grid.Row="5" />
+            <TextBlock Grid.Row="1"  Text="Full Name" />
+            <TextBlock Grid.Row="3" Text="Short Name"/>
+            <TextBlock Grid.Row="5" Text="Color" />
+            <TextBlock Grid.Row="7" Text="Instrument"  />
+            <TextBox x:Name="tb_Instrument" Grid.Column="1" Grid.Row="7" />
+
+        </Grid>
+        <Button x:Name="btn_confirm" Content="Confirm" Grid.Column="8" Grid.Row="5" Click="btn_confirm_Click"/>
+        <Button x:Name="btn_Change" Content="Change" Grid.Column="3" Grid.Row="5" Grid.ColumnSpan="2" />
+        <TextBlock Grid.ColumnSpan="4" Grid.Column="4" Grid.RowSpan="2" Text="Properties" Grid.Row="2"/>
+
+    </Grid>
+</Window>

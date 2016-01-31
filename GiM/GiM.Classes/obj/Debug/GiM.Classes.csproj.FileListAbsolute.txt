@@ -1,0 +1,12 @@
+E:\Projects\GiM\GiM\GiM.Classes\obj\Debug\GiM.Classes.csprojResolveAssemblyReference.cache
+E:\Projects\GiM\GiM\GiM.Classes\bin\Debug\GiM.Classes.dll.config
+E:\Projects\GiM\GiM\GiM.Classes\bin\Debug\GiM.Classes.dll
+E:\Projects\GiM\GiM\GiM.Classes\bin\Debug\GiM.Classes.pdb
+E:\Projects\GiM\GiM\GiM.Classes\obj\Debug\GiM.Classes.dll
+E:\Projects\GiM\GiM\GiM.Classes\obj\Debug\GiM.Classes.pdb
+W:\Projects\GiM\GiM\GiM.Classes\bin\Debug\GiM.Classes.dll.config
+W:\Projects\GiM\GiM\GiM.Classes\bin\Debug\GiM.Classes.dll
+W:\Projects\GiM\GiM\GiM.Classes\bin\Debug\GiM.Classes.pdb
+W:\Projects\GiM\GiM\GiM.Classes\obj\Debug\GiM.Classes.csprojResolveAssemblyReference.cache
+W:\Projects\GiM\GiM\GiM.Classes\obj\Debug\GiM.Classes.dll
+W:\Projects\GiM\GiM\GiM.Classes\obj\Debug\GiM.Classes.pdb
